@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Teste</title>
+	<style type="text/css" media="all">
+		input {
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	Velocidade do carro <input type="number" name="velCar" id="velCar" /> Km/h
+	<br>
+	Velocidade Máxima  <input type="number" name="velMax" id="velMax"/> Km/h
+	<br>
+	<input type="button" name="teste" id="teste" value="Verificar" onclick="calcular()"/>
 
+	<div id="res">
+		Resultado
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+		function calcular() {
+			var velCar = Number(document.getElementById('velCar').value)
+			var velMax = Number(document.querySelector('input#velMax').value)
+			var res = document.getElementById('res')
+			
+			res.innerHTML = `<p>Sua velocidade é de ${velCar} Km/h e a velocidade máxima é de ${velMax} Km/h</p>`
+			
+			if(velCar > velMax) {
+				res.innerHTML += `<p>MULTADO!!!</p>`
+			} else{
+				res.innerHTML += `<p>Dirija com cuidado.</p>`
+			}
+		}
+			</script>
+		</body>
+	</html>
