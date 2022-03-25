@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Título da página</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<script src="1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<h1>Verificador de idade</h1>
+	<section>
+		<div>
+		Ano de nascimento <input type="number" name="nasc" id="nasc" min="0" max="9999" placeholder="2020"/>
+		<br>
+		<input type="radio" name="sexo" id="mas" checked/><label for="mas">Masculino</label>
+		<input type="radio" name="sexo" id="fem" /><label for="fem">Feminino</label>
+		<br>
+		<input type="button" name="botao" id="botao" value="Enviar" size="10" onclick="idade()"/>
+		</div>
+		<div id="res">
+		<p>Insira os dados para ver o resultado!</p>
+		</div>
+	</section>
+	<footer>
+		<p>Curso em Video</p>
+	</footer>
+</body>
+</html>
