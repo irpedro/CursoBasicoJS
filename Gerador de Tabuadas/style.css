@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	text-align: left;
+	background-color: #87ceeb;
+	height: 100%;
+}
+h1{
+	color: white;
+	padding: 2vh;
+	text-align: center;
+	font: bold 2em 'candara';
+}
+section{
+	box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+	margin: 5vw;
+	background-color: white;
+	padding: 2vh;
+	border-radius: 10px;
+}
+fieldset{
+	border-style: none;
+}
+input{
+	margin: 1.4vh;
+}
+p{
+   text-align: center;
+}
+input#num{
+    margin-left: 16vw;
+}
+select#tab{
+    margin-left: 12vw;
+}
+input#botao{
+	text-align: center;
+}
+footer{
+	font: italic 2vh 'arial';
+	text-align: center;
+	color: white;
+	margin: 2vh;
+}
