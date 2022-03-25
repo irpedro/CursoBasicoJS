@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Exe 01</title>
+	<style type="text/css" media="all">
+		input {
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>De que pais você é?</h1>
+	<input type="text" name="país" id="país" />
+	<input type="button" name="conf" id="conf" value="Enviar" onclick="Country()" />
+	<div id="res">
 
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+
+		function Country() {
+			var país = document.getElementById('país').value
+			var res = document.querySelector('div#res')
+			res.innerHTML = `Nacionalidade`
+			if (país == "Brasil" || país == 'BR' || país == 'brasil') {
+				res.innerHTML += `<p>Você é brasileiro</p>`
+			} else {
+				res.innerHTML += `</p>You are a foreign</p>`
+			}
+		}
+	</script>
+</body>
+</html>
